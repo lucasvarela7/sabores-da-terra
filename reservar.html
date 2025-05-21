@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reservar.css" />
+  <title>Formulário de Reserva</title>
+</head>
+
+<body>      
+  <form class="reserva-form">
+    <section>
+      <h2>🍽️ Dados Pessoais</h2>
+      <div class="grid">
+        <input type="text" placeholder="Nome Completo" required />
+        <input type="email" placeholder="E-mail" required />
+        <input type="tel" placeholder="Telefone" required />
+        <input type="number" placeholder="Número de Pessoas" required />
+      </div>
+    </section>
+
+    <section>
+      <h2>📅 Data e Horário</h2>
+      <div class="grid">
+        <input type="date" required />
+        <select required>
+          <option>Selecione um horário</option>
+          <option>18:00</option>
+          <option>19:00</option>
+          <option>20:00</option>
+          <option>21:00</option>
+        </select>
+      </div>
+    </section>
+
+    <section>
+      <h2>🎉 Preferências e Ocasião</h2>
+
+      <label>Tipo de Ocasião:</label>
+      <select>
+        <option>Aniversário</option>
+        <option>Encontro Romântico</option>
+        <option>Reunião de Negócios</option>
+        <option>Jantar em Família</option>
+        <option>Outra</option>
+      </select>
+      <input type="text" placeholder="Descreva, se escolheu 'Outra'" />
+
+      <label>Preferência de Assento:</label>
+      <select>
+        <option>Interno</option>
+        <option>Externo</option>
+        <option>Próximo à janela</option>
+        <option>Área silenciosa</option>
+        <option>Acessível (cadeira de rodas)</option>
+      </select>
+
+      <label>Restrições Alimentares / Preferências:</label>
+      <select>
+        <option>Sem glúten</option>
+        <option>Vegetariano</option>
+        <option>Vegano</option>
+        <option>Alérgico a nozes</option>
+        <option>Outra</option>
+      </select>
+      <input type="text" placeholder="Descreva, se escolheu 'Outra'" />
+
+      <label>Solicitações Especiais:</label>
+      <textarea placeholder="Ex: Mesa decorada, bolo às 20h..."></textarea>
+
+      <label>Forma de Contato Preferida:</label>
+      <select>
+        <option>WhatsApp</option>
+        <option>E-mail</option>
+        <option>Telefone</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>📸 Extras</h2>
+      <label><input type="checkbox" /> Deseja receber novidades e promoções</label>
+      <label>Upload de imagem (opcional):</label>
+      <input type="file" accept="image/*" />
+    </section>
+
+    <section>
+      <label><input type="checkbox" required /> Li e concordo com a política de reservas e cancelamentos.</label>
+    </section>
+
+    <button type="submit">Confirmar Reserva</button>
+  </form>
+ <a href="index.html" class="botao-voltar">← Voltar</a>
+
+</body>
+
+</html>
